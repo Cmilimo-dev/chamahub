@@ -1,0 +1,6 @@
+# Signing configuration
+# Copy this to gradle.properties and fill in your actual values
+MYAPP_UPLOAD_STORE_FILE=../keystores/chamahub-release-key.keystore
+MYAPP_UPLOAD_KEY_ALIAS=chamahub-key-alias
+MYAPP_UPLOAD_STORE_PASSWORD=your_keystore_password_here
+MYAPP_UPLOAD_KEY_PASSWORD=your_key_password_here
