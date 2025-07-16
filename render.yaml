@@ -2,9 +2,12 @@ services:
   - type: web
     name: chamahub-backend
     runtime: node
+    repo: https://github.com/Cmilimo-dev/chamahub.git
+    branch: main
     buildCommand: cp backend-package.json package.json && npm install
     startCommand: node server-postgres.js
     plan: free
+    region: oregon
     healthCheckPath: /api/health
     envVars:
       - key: NODE_ENV
@@ -33,3 +36,4 @@ databases:
     databaseName: chamahub
     user: chamahub_user
     plan: free
+    region: oregon
